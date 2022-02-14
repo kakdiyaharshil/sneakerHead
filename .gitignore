@@ -1,0 +1,23 @@
+# OS genreated files
+.DS_Store
+.DS_store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+#wordpress standers files/folders
+uploads
+upgrade
+
+#debug Files
+*.log
+*.sql
+
+#wordpress plugin folders
+plugins/current-template-file
+
+
+# NPM files/folders
+node_modules
