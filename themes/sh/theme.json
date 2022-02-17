@@ -3,6 +3,7 @@
     "version": 2,
     "settings": {
         "color": {
+            "custom":false,
             "defaultPalette": false,
             "palette": [
                 {
@@ -14,8 +15,17 @@
                     "name": "White",
                     "slug": "white",
                     "color": "#ffffff"
+                },
+                {
+                    "name": "Grapefruit",
+                    "slug": "Grapefruit",
+                    "color": "#ff5252"
                 }
             ]
+        },
+        "layout":{
+            "contentSize": "1000px",
+            "wideSize": "12000px"
         }
     }
 }
