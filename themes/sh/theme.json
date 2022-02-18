@@ -17,9 +17,14 @@
                     "color": "#ffffff"
                 },
                 {
-                    "name": "Grapefruit",
-                    "slug": "Grapefruit",
-                    "color": "#ff5252"
+                    "name": "Red",
+                    "slug": "Red",
+                    "color": "#FF0000"
+                },
+                {
+                    "name": "Grey",
+                    "slug": "Grey",
+                    "color": "#44484f"
                 }
             ]
         },
