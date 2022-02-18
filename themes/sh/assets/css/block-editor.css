@@ -18,3 +18,116 @@
 .alignfull{
     max-width: 100%;
 }
+
+.wp-block-image{
+    border-radius: 15px;
+  max-width: 1000px;
+  text-align: center;
+}
+
+.wp-block-separator.is-style-wide{
+    border-bottom-width: 5px;
+    color: red;
+}
+
+.wp-block-calendar table th{
+    background-color: red;
+}
+
+.wp-block-calendar tbody td, .wp-block-calendar th{
+    text-align: left;
+}
+
+.entry-title{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.site-title a{
+    color: white;
+    font-weight: bolder;
+    font-size: 50px;
+}
+.site-title a:visited{
+    color: white;
+    font-weight: bolder;
+    font-size: 50px;
+}
+.site-title a:link{
+    color: white;
+    font-weight: bolder;
+    font-size: 50px;
+}
+
+.site-description{
+    color: red;
+}
+
+.entry-content{
+    color: gray;
+}
+
+.menu{
+    text-align: center;
+    padding:15px;
+
+}
+
+#wp-block-search__input-1{
+    border-color: red;
+    width: 70%;
+    text-align: center;
+} 
+
+.wp-block-search__button  {
+    
+    border-color: red;
+    height: 40px;
+    border-radius: 15px;
+
+}
+
+.wp-block-search__label{
+    text-align: center;
+    font-size: 17px;
+    color: gray;
+}
+
+.menu a{
+    color: black;
+    padding: 0px 25px 0px 25px;
+}
+
+
+
+.menu a:visited{
+    text-align: center;
+    color: black;
+}
+
+.menu a:link{
+    text-align: center;
+    color: black;
+}
+
+.site-info{
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 0;
+}
+
+.site-info a:link{
+    color: white;
+}
+
+.site-info a:visited{
+    color: white;
+}
+
+.site-branding{
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+}
