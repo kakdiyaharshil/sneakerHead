@@ -74,15 +74,11 @@
 }
 
 
-.product .type-product  .product_cat-uncategorized .has-post-thumbnail  .shipping-taxable  .product-type-simple{
-    border: 2px solid red ;
-    height: 450px;
-}
 
-button .product_type_simple .add_to_cart_button {
-    background-color: black;
-    border-radius: 0%;
-    color: red;
+.type-product{
+    height: 450px;
+    border: 1px solid red;
+    padding: 5px;
 }
 
 .woocommerce  .product_type_simple {
@@ -94,6 +90,13 @@ button .product_type_simple .add_to_cart_button {
     text-align: center;
 }
 
+.entry-title{
+    color: red;
+}
+
+.woocommerce-Price-amount .amount{
+    color: red;
+}
 
 #wp-block-search__input-1{
     border-color: black;
