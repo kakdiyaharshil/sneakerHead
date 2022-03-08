@@ -69,22 +69,10 @@
 	// 		)
 	// 	);
 	// }
+
+	sh_social_media_menu();
 			?>
 
-			<ul class="social-medoa-menu">
-				<?php if(! empty(get_theme_mod('sh_facebook_url'))&& ! empty(get_theme_mod('sh_facebook_title') ))  {?>
-				<li>
-					<a href="<?php echo esc_url (get_theme_mod('sh_facebook_url')); ?>">
-					<?php
-					if ( ! empty(get_theme_mod('sh_facebook_icon') ) ){
-					echo wp_get_attachment_image( get_theme_mod('sh_facebook_icon'));
-					}	else{
-						echo get_theme_mod('sh_facebook_title'); 
-					}
-					 ?>
-					 </a>
-				</li>
-				<?php } ?>
-			</ul>
+			
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->

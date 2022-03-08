@@ -163,3 +163,25 @@ if ( ! function_exists( 'wp_body_open' ) ) :
 		do_action( 'wp_body_open' );
 	}
 endif;
+
+if( ! function_exists('sh_social_media_menu') ){
+	function sh_social_media_menu(){
+		?>
+			<ul class="social-media-menu">
+				<?php if(! empty(get_theme_mod('sh_facebook_url'))&& ! empty(get_theme_mod('sh_facebook_title') ))  {?>
+				<li>
+					<a href="<?php echo esc_url (get_theme_mod('sh_facebook_url')); ?>"aria-label="<?php echo ! empty(get_theme_mod('sh_facebook_icon') ) ? get_theme_mod('sh_facebook_title') : ''; ?>">
+					<?php
+					if ( ! empty(get_theme_mod('sh_facebook_icon') ) ){
+					echo wp_get_attachment_image( get_theme_mod('sh_facebook_icon'), array('30','30'));
+					}	else{
+						echo get_theme_mod('sh_facebook_title'); 
+					}
+					?>
+					</a>
+				</li>
+				<?php } ?>
+			</ul>
+		<?php
+	}
+}
