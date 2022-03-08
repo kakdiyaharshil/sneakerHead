@@ -70,7 +70,7 @@
 	// 	);
 	// }
 
-	sh_social_media_menu();
+	
 			?>
 
 			

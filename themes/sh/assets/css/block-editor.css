@@ -68,15 +68,15 @@
 }
 
 #primary-menu{
-    margin-right: auto;
-    margin-left: auto;
-    background-color: black;
-    color: white;
+    margin-right: 35%;
+    margin-left: 35%;
+    color: black;
 }
 
 .menu{
     text-align: center;
 }
+
 
 #wp-block-search__input-1{
     border-color: red;
@@ -114,26 +114,26 @@
 
 .menu a:visited{
     text-align: center;
-    color: white;
+    color: black;
 }
 
 .menu a:link{
     text-align: center;
-    color:white;
+    color:black;
 }
 
 .wp-block-pages-list__item__link{
     list-style: none;
     display: inline;
     text-align: center;
-    color: white;
+    color: black;
 
 }
 .wp-block-pages-list__item__link:link{
     list-style: none;
     display: inline;
     text-align: center;
-    color: white;
+    color: black;
 
 }
 
@@ -141,7 +141,7 @@
     list-style: none;
     display: inline;
     text-align: center;
-    color: white;
+    color: black;
 
 }
 
