@@ -49,7 +49,10 @@ function sh_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus(
 		array(
-			'menu-1' => esc_html__( 'Primary', 'sh' ),
+			'menu-primary' => esc_html__( 'Primary', 'sh' ),
+			'menu-secondary' => esc_html__( 'Secondary', 'sh' ),
+			'menu-footer' => esc_html__( 'Footer', 'sh' ),
+			'menu-social' => esc_html__( 'Social', 'sh' ),
 		)
 	);
 
