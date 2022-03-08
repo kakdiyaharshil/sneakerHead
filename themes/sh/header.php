@@ -28,6 +28,9 @@
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
 			<?php
+			if(has_custom_logo() ) {
+				the_custom_logo( );
+			} else {
 			the_custom_logo();
 			if ( is_front_page() && is_home() ) :
 				?>
@@ -42,7 +45,9 @@
 			if ( $sh_description || is_customize_preview() ) :
 				?>
 				<p class="site-description"><?php echo $sh_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-			<?php endif; ?>
+			<?php endif; 
+			}
+			?>
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation">
@@ -56,6 +61,14 @@
 				)
 			);
 		}
+
+		if(has_nav_menu( 'menu-social' )) {
+			wp_nav_menu(
+			array(
+				'theme_location' => 'menu-social',
+			)
+		);
+	}
 			?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
