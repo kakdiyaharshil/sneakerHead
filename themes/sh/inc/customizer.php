@@ -33,6 +33,12 @@ function sh_customize_register( $wp_customize ) {
 	}
 
 	$wp_customize->add_setting(	'sh_logo_alt' );
+	$wp_customize->add_control( new WP_Customize_Media_Control($wp_customize,'sh_logo_alt', array(
+		'label' 		=>	'Logo(Alt)',
+		'section'  		=> 	'title_tagline',
+		'priority' 		=>  9,
+	 )  ) );
+
 
 	$wp_customize->add_panel('sh_social_media', array(
 		'title' => esc_html__( 'Social media', 'sh' ),	
