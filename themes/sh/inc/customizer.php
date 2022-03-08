@@ -31,6 +31,28 @@ function sh_customize_register( $wp_customize ) {
 			)
 		);
 	}
+
+	$wp_customize->add_section('sh_social_media', array(
+	'title' => esc_html__( 'Social media', 'sh' ),	
+	));
+
+	$wp_customize->add_setting(	'sh_facebook_url' );
+
+	$wp_customize->add_control(	'sh_facebook_url', array(
+		'label' 		=>	'Fcebook Url',
+		'description' 	=> 'Enter Your Facebook Profile Link ',
+		'type'  		=> 	'url',
+		'section'  		=> 	'sh_social_media',
+	 ) );
+
+	 $wp_customize->add_setting(	'sh_twitter_url' );
+
+	$wp_customize->add_control(	'sh_twitter_url', array(
+		'label' 		=>	'twitter Url',
+		'description' 	=> 'Enter Your twitter Profile Link ',
+		'type'  		=> 	'url',
+		'section'  		=> 	'sh_social_media',
+	 ) );
 }
 add_action( 'customize_register', 'sh_customize_register' );
 
