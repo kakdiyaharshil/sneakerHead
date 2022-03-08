@@ -46,7 +46,7 @@ function sh_customize_register( $wp_customize ) {
 	
 
 	$wp_customize->add_section('sh_facebook', array(
-	'title' => esc_html__( 'Fcebook', 'sh' ),	
+	'title' => esc_html__( 'Facebook', 'sh' ),	
 	'panel' => 'sh_social_media'
  	));
 
@@ -74,19 +74,63 @@ function sh_customize_register( $wp_customize ) {
 		'section'  		=> 	'sh_facebook',
 	 )  ) );
 
-	 $wp_customize->add_section('sh_Twitter', array(
+	 $wp_customize->add_section('sh_twitter', array(
 		'title' => esc_html__( 'Twitter', 'sh' ),	
 		'panel' => 'sh_social_media'
 		));
 
-	 $wp_customize->add_setting('sh_twitter_url' );
+	$wp_customize->add_setting('sh_twitter_title' );
+
+	$wp_customize->add_control(	'sh_twitter_title', array(
+		'label' 		=>	'Title',
+		'description' 	=> 'Enter Your Link Title',
+		'section'  		=> 	'sh_twitter',
+	 ) );
+
+	$wp_customize->add_setting('sh_twitter_url' );
 
 	$wp_customize->add_control(	'sh_twitter_url', array(
 		'label' 		=>	'Url',
 		'description' 	=> 'Enter Your twitter Profile Link ',
 		'type'  		=> 	'url',
-		'section'  		=> 	'sh_Twitter',
+		'section'  		=> 	'sh_twitter',
 	 ) );
+
+	 $wp_customize->add_setting('sh_twitter_icon' );
+
+	 $wp_customize->add_control( new WP_Customize_Media_Control($wp_customize,'sh_twitter_icon', array(
+		'label' 		=>	'Icon',
+		'section'  		=> 	'sh_twitter',
+	 )  ) );
+
+	 $wp_customize->add_section('sh_instagram', array(
+		'title' => esc_html__( 'Instagram', 'sh' ),	
+		'panel' => 'sh_social_media'
+		));
+
+	$wp_customize->add_setting('sh_instagram_title' );
+
+	$wp_customize->add_control(	'sh_instagram_title', array(
+		'label' 		=>	'Title',
+		'description' 	=> 'Enter Your Link Title',
+		'section'  		=> 	'sh_instagram',
+	 ) );
+
+	$wp_customize->add_setting('sh_instagram_url' );
+
+	$wp_customize->add_control(	'sh_instagram_url', array(
+		'label' 		=>	'Url',
+		'description' 	=> 'Enter Your instagram Profile Link ',
+		'type'  		=> 	'url',
+		'section'  		=> 	'sh_instagram',
+	 ) );
+
+	 $wp_customize->add_setting('sh_instagram_icon' );
+
+	 $wp_customize->add_control( new WP_Customize_Media_Control($wp_customize,'sh_instagram_icon', array(
+		'label' 		=>	'Icon',
+		'section'  		=> 	'sh_instagram',
+	 )  ) );
 }
 add_action( 'customize_register', 'sh_customize_register' );
 
