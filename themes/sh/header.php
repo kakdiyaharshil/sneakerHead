@@ -28,7 +28,7 @@
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
 			<?php
-			if(has_custom_logo() ) {
+			if( !empty (get_custom_logo() ) ) {
 				the_custom_logo( );
 			} else {
 			the_custom_logo();
