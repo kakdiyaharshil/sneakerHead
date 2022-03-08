@@ -32,6 +32,8 @@ function sh_customize_register( $wp_customize ) {
 		);
 	}
 
+	$wp_customize->add_setting(	'sh_logo_alt' );
+
 	$wp_customize->add_panel('sh_social_media', array(
 		'title' => esc_html__( 'Social media', 'sh' ),	
 		));
@@ -58,6 +60,13 @@ function sh_customize_register( $wp_customize ) {
 		'type'  		=> 	'url',
 		'section'  		=> 	'sh_facebook',
 	 ) );
+
+	 $wp_customize->add_setting(	'sh_facebook_icon' );
+
+	 $wp_customize->add_control( new WP_Customize_Media_Control($wp_customize,'sh_facebook_icon', array(
+		'label' 		=>	'Icon',
+		'section'  		=> 	'sh_facebook',
+	 )  ) );
 
 	 $wp_customize->add_section('sh_Twitter', array(
 		'title' => esc_html__( 'Twitter', 'sh' ),	
