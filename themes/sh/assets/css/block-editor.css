@@ -79,14 +79,14 @@
 
 
 #wp-block-search__input-1{
-    border-color: red;
+    border-color: black;
     width: 70%;
     text-align: center;
 } 
 
 .wp-block-search__button  {
     
-    border-color: red;
+    border-color: black;
     height: 40px;
     border-radius: 15px;
 
