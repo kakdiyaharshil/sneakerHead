@@ -1,8 +1,8 @@
 <?php 
 /**
- * Sneaker Head functions and definitions
+ * Functions Which enhance the theme by creating custom_post_type
  *
- * @link https://developer.wordpress.org/themes/basics/theme-functions/
+ *
  *
  * @package Sneaker_Head
  */
@@ -43,7 +43,7 @@ function wpdocs_kantbtrue_init() {
         'query_var'          => true,
         'rewrite'            => array( 'slug' => 'recipe' ),
         'capability_type'    => 'post',
-        'has_archive'        => true,
+        'has_archive'        => 'recipes',
         'hierarchical'       => false,
         'menu_position'      => 20,
         'supports'           => array( 'title', 'editor', 'author', 'thumbnail' ),
