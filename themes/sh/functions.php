@@ -205,3 +205,7 @@ require get_template_directory() . '/inc/customizer.php';
  */
 require get_template_directory() . '/inc/block-editor.php';
 
+/**
+ * Custom Post Type Addition additions.
+ */
+require get_template_directory() . '/inc/post-type.php';
