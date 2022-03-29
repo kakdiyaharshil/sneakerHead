@@ -16,7 +16,9 @@
 		$recipe_args = array(
 			'post_type' 	=> array('sh_recipe'),
 			'post_status' 	=> 'publish',
-			'post_per_page' => 3
+			'post_per_page' => 3,
+			'orderby'		=>'rand',
+			'post__not_in'	=> array(get_the_ID())
 		);
 
 		$recipe_query = new WP_Query( $recipe_args);
