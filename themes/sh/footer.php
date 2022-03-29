@@ -17,7 +17,7 @@
 			'post_type' 	=> array('sh_recipe'),
 			'post_status' 	=> 'publish',
 			'post_per_page' => 3,
-			'orderby'		=>'rand',
+			'orderby'		=>'DESC',
 			'post__not_in'	=> array(get_the_ID())
 		);
 
