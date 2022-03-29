@@ -43,6 +43,27 @@
     margin-top: 50px;
 }
 
+.entry-title a{
+    color: black;
+    font-weight: bolder;
+    font-size: 25px;
+}
+.entry-title a:visited{
+    color: black;
+    font-weight: bolder;
+    font-size: 25px;
+}
+.entry-title a:link{
+    color: black;
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+.entry-meta{
+    text-align: center;
+    color: red;
+}
+
 .site-title a{
     color: white;
     font-weight: bolder;
@@ -65,6 +86,7 @@
 
 .entry-content{
     color: gray;
+    padding: 20px;
 }
 
 #primary-menu{
