@@ -28,9 +28,15 @@ if ( $recipe_query->have_posts() ) {
 		<?php
 		while ( $recipe_query->have_posts() ){
 			$recipe_query->the_post();
+			?>
+			<div class="cell small-12 medium-4">
+			<?php
 			the_post_thumbnail();
 			the_title('<h3>', '</h3>');
 			the_excerpt();
+			?>
+			</div>
+			<?php
 		}
 		wp_reset_postdata();
 		
