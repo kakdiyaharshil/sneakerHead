@@ -21,6 +21,7 @@ html{
 .entry-footer{
     text-align: center;
     color: red;
+    margin-bottom: 50px;
 }
 
 .alignfull{
@@ -48,7 +49,7 @@ html{
 
 .entry-title{
     text-align: center;
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
 .entry-title a{
