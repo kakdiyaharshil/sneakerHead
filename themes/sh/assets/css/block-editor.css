@@ -18,6 +18,11 @@ html{
     max-width: 1200px;
 }
 
+.entry-footer{
+    text-align: center;
+    color: red;
+}
+
 .alignfull{
     max-width: 100%;
 }
